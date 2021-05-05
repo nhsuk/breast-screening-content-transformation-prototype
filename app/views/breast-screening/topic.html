@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-lab-8-a-to-z.html' %}   
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+  NHS.UK breast screening content transformation
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -31,6 +31,17 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+        <div >
+          <ol class="nhsuk-breadcrumb__list ">
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-7/">Home</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-7/a-to-z">Health A to Z</a></li>
+          </ol>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-7/a-to-z">Health A to Z</a></p>
+          <div class="nhsuk-u-padding-bottom-2"></div>
+        </div>
+      </nav>
+
       <!-- Change the page title here -->
       <h1>Breast screening</h1>
       <p class="nhsuk-lede-text">Information and advice about routine breast screening and why it is important.</p>
@@ -44,6 +55,7 @@
           <li><a href="/breast-screening/results" title="">Your results</a></li>
           <li><a href="/breast-screening/further-help" title="">Further help and support</a></li>
         </ul>
+        <div class="nhsuk-u-padding-bottom-6"></div>
       </section>
 
     
