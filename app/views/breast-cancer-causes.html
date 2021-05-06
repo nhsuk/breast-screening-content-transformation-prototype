@@ -1,0 +1,194 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-8-a-to-z.html' %}   
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+NHS.UK breast screening content transformation
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+            <div >
+              <ol class="nhsuk-breadcrumb__list ">
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/home">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/a-to-z">Health A to Z</a></li>
+              </ol>
+              <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/a-to-z">Health A to Z</a></p>
+            </div>
+          </nav>
+      <!-- Change the page title here -->
+      <h1>
+        <span role="text">Overview
+          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+            <span class="nhsuk-u-visually-hidden"> - </span>
+            Breast cancer in women
+          </span>
+        </span>
+      </h1>
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item">
+            <span class="nhsuk-contents-list__link" href="/breast-cancer-in-women-overview">Overview</span>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Symptoms</a>
+          </li>
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current" href="breast-cancer-causes">Causes</span>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Diagnosis</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Treatment</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Living with</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Prevention</a>
+          </li>
+        </ol>
+      </nav>
+
+      <section>
+        <p><b>The causes of breast cancer are not fully understood, making it difficult to say why one woman may develop breast cancer and another may not.</b></p>
+        <p>However, there are risk factors known to affect your likelihood of developing breast cancer. Some of these you cannot do anything about, but there are some you can change.</p>
+      </section>
+
+      <section>
+      <h2>Age</h2>
+      <p>The risk of developing breast cancer increases with age. The condition is most common in women over age 50 who have been through the <a href="">menopause</a>. About 8 out of 10 cases of breast cancer happen in women over 50.</p>
+      <p>All women who are 50 to 70 years of age should be screened for breast cancer every 3 years as part of the NHS Breast Screening Programme.</p>
+      <p>Women over the age of 70 are still eligible to be screened and can arrange this through their GP or local screening unit.</p>
+      <p>Find out more about <a href="/breast-screening/what-is-breast-screening"></a>breast screening.</p>
+      </section>
+
+      <section>
+        <h2>Family history</h2>
+        <p>If you have close relatives who have had breast cancer or <a href="">ovarian cancer</a>, you may have a higher risk of developing breast cancer.</p>
+        <p>However, because breast cancer is the most common cancer in women, it's possible for it to occur in more than one family member by chance.</p>
+        <p>Most cases of breast cancer do not run in families, but genes known as BRCA1 and BRCA2 can increase your risk of developing both breast and ovarian cancer. It's possible for these genes to be passed on from a parent to their child.</p>
+        <p>The genes TP53 and CHEK2, are also associated with an increased risk of breast cancer.</p>
+        <p>Speak to a GP if breast or ovarian cancer runs in your family and you're worried you may get it too. They may refer you for an NHS genetic test, which will tell you if you have inherited one of the cancer-risk genes</p>
+        <p>Find out more about <a href="">predictive genetic tests for cancer-risk genes</a>.</p>
+      </section>
+
+      <section>
+        <h2>Previous breast cancer or lump</h2>
+        <p>If you have previously had breast cancer or early non-invasive cancer cell changes in breast ducts, you have a higher risk of developing it again, either in your other breast or in the same breast.</p>
+        <p>A <a href="">benign breast lump</a> does not mean you have breast cancer, but certain types of breast lumps may slightly increase your risk of developing cancer.</p>
+        <p>Some benign changes in your breast tissue, such as cells growing abnormally in ducts (atypical ductal hyperplasia), or abnormal cells inside your breast lobes (lobular carcinoma in situ), can make getting breast cancer more likely.</p>
+      </section>
+
+      <section>
+        <h2>Dense breast tissue</h2>
+        <p>Your breasts are made up of thousands of tiny glands (lobules) that produce milk. This glandular tissue contains a higher concentration of breast cells than other breast tissue, making it denser.</p>
+        <p>Women with dense breast tissue may have a higher risk of developing breast cancer as there are more cells that can become cancerous.</p>
+        <p>Dense breast tissue can also make a breast scan <a href="/breast-screening/what-happens">(mammogram)</a> difficult to read, as any lumps or areas of abnormal tissue are harder to see.</p>
+        <p>Younger women tend to have denser breasts. As you get older, the amount of glandular tissue in your breasts decreases and is replaced by fat, so your breasts become less dense.</p>
+      </section>
+
+      <section>
+        <h2>Hormones and hormone exposure</h2>
+        <h3>Exposure to oestrogen</h3>
+        <p>The female hormone oestrogen can sometimes stimulate breast cancer cells and cause them to grow.</p>
+        <p>The ovaries, where your eggs are stored, begin to produce oestrogen when you start <a href="">puberty</a>, to regulate your periods.</p>
+        <p>Your risk of developing breast cancer may rise slightly with the amount of oestrogen your body is exposed to.</p>
+        <p>For example, if you started having <a href="">periods</a> at a young age and experienced the meopause later than average, you will have been exposed to oestrogen over a longer period of time.</p>
+        <p>In the same way, not having children or having children later in life may slightly increase your risk of developing breast cancer because your exposure to oestrogen is not interrupted by pregnancy.</p>
+        <h3>Hormone replacement therapy (HRT)</h3>
+        <p><a href="">Hormone replacement therapy (HRT)</a> is associated with an increased risk of developing breast cancer.</p>
+        <p>All types of HRT can increase the risk of breast cancer, except for vaginal oestrogen.</p>
+        <p>There is no increased risk of breast cancer if you take HRT for less than 1 year.</p>
+        <p>But if you take HRT for longer than 1 year, you have a higher risk of breast cancer than women who never use HRT.</p>
+        <p>The increased risk of breast cancer falls after you stop taking HRT, but some increased risk remains for more than 10 years compared to women who have never used HRT.</p>
+        <p>Find out more about the<a href=""> risks of HRT</a>.</p>
+        <h3>Contraceptive pill</h3>
+        <p>Research shows that women who take the <a href="">contraceptive pill</a> have a slightly increased risk of developing breast cancer.</p>
+        <p>However, the risk starts to decrease once you stop taking the pill, and your risk of breast cancer is back to normal 10 years after stopping.</p>
+        <p>Cancer Research UK has more information about <a href="">the contraceptive pill and cancer risk</a>.</p>
+      </section>
+
+      <section>
+        <h2>Lifestyle factors</h2>
+        <h3>Being overweight or obese</h3>
+        <p>If you have experienced the menopause and are overweight or <a href="">obese</a>, you may be more at risk of developing breast cancer.</p>
+        <p>This is thought to be linked to the amount of oestrogen in your body, as being overweight or obese after the menopause causes more oestrogen to be produced.</p>
+        <h3>Alcohol</h3>
+        <p>Drinking alcohol increases the risk of getting breast cancer.</p>
+        <p>People who drink even small amounts of alcohol on a regular basis have a greater risk of getting breast cancer than people who do not drink alcohol at all. The more alcohol you drink, the more your risk of getting breast cancer increases.</p>
+      </section>
+
+      <section>
+        <h2>Radiation</h2>
+        <p>Certain medical procedures that use radiation, such as <a href="">X-rays</a> and <a href="">CT scans</a>, may slightly increase your risk of developing breast cancer.</p>
+        <p>If you had <a href="">radiotherapy </a>to your chest area for<a href=""> Hodgkin lymphoma</a> you should have already received a letter from the Department of Health and Social Care inviting you for a consultation with a specialist to discuss your increased risk of developing breast cancer.</p>
+        <p>See your GP if you were not contacted or if you did not attend a consultation. You're usually entitled to have your breast checked with an MRI scan.</p>
+        <p>If you currently need radiotherapy for Hodgkin lymphoma, your specialist should discuss the risk of breast cancer before your treatment begins.</p>
+        <h3>Want to know more?</h3>
+        <ul>
+          <li><a href="">Breast Cancer Now: the causes of breast cancer</a></li>
+          <li><a href="">Cancer Research UK: breast cancer risks and causes</a></li>
+          <li><a href="">Macmillan Cancer Support: understanding breast cancer</a></li>
+        </ul>
+      </section>
+
+
+
+      <div class="nhsuk-review-date">
+        <p class="nhsuk-body-s">
+          Page last reviewed: 27 March 2018<br>
+          Next review due: 27 March 2021
+        </p>
+      </div>
+
+      
+    
+        </div>
+    </div>
+
+   
+        <!-- Custom JavaScript files can be added to this file -->
+        <!-- <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/main.js"></script> -->
+    
+    <!-- Add any custom scripts -->
+    
+        <!-- For adding page specific JavsScript -->
+        
+      
+    
+        
+      
+    
+    </body>
+
+
+    </div>
+  </div>
+{% endblock %}

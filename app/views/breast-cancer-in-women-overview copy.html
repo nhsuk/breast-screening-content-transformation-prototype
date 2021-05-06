@@ -1,0 +1,247 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-8-a-to-z.html' %}   
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+NHS.UK breast screening content transformation
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+            <div >
+              <ol class="nhsuk-breadcrumb__list ">
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/home">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/a-to-z">Health A to Z</a></li>
+              </ol>
+              <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/a-to-z">Health A to Z</a></p>
+            </div>
+          </nav>
+      <!-- Change the page title here -->
+      <h1>
+        <span role="text">Overview
+          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+            <span class="nhsuk-u-visually-hidden"> - </span>
+            Breast cancer in women
+          </span>
+        </span>
+      </h1>
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current" href="/breast-cancer-in-women-overview">Overview</span>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Symptoms</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="breast-cancer-causes">Causes</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Diagnosis</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Treatment</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Living with</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="">Prevention</a>
+          </li>
+        </ol>
+      </nav>
+
+      <section>
+        <p><b>Breast cancer is the most common type of cancer in the UK. Most women diagnosed with breast cancer are over the age of 50, but younger women can also get breast cancer.</b></p>
+        <p>About 1 in 8 women are diagnosed with breast cancer during their lifetime. There's a good chance of recovery if it's detected at an early stage.</p>
+        <p>For this reason, it's vital that women check their breasts regularly for any changes and always have any changes examined by a GP.</p>
+        <p>In rare cases, men can also be diagnosed with breast cancer. Find out more about <a href="">breast cancer in men</a>.</p>
+      </section>
+
+      <section>
+        <div class="nhsuk-warning-callout">
+          <h2 class="nhsuk-warning-callout__label">Get the flu vaccine</h2>
+          <p>Flu can be very serious if you have breast cancer. Ask for your free flu jab at:</p><ul><li>your GP surgery</li><li>a local pharmacy that has a flu vaccine service</li></ul><p><a href="/conditions/vaccinations/flu-influenza-vaccine/">Find out more about the flu vaccine</a></p>
+        </div>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h2>Coronavirus advice</h2><p>Get advice about coronavirus and cancer:</p><ul><li><a href="https://www.macmillan.org.uk/coronavirus/cancer-and-coronavirus">Macmillan: Coronavirus guidance for people with cancer</a></li><li><a href="https://www.cancerresearchuk.org/about-cancer/cancer-in-general/coronavirus-and-cancer">Cancer Research UK: Coronavirus and cancer</a></li></ul>
+        </div>
+      </section>
+
+      <section>
+      <h2>Symptoms of breast cancer</h2>
+      <p>Breast cancer can have several symptoms, but the first noticeable symptom is usually a lump or area of thickened breast tissue.</p>
+      <p>Most <a href="">breast lumps</a> are not cancerous, but it's always best to have them checked by a doctor.</p>
+      <p>You should also see a GP if you notice any of these symptoms:</p>
+      <ul>
+        <li>a change in the size or shape of one or both breasts</li>
+        <li><a href="">discharge from either of your nipples</a>, which may be streaked with blood</li>
+        <li>a lump or swelling in either of your armpits</li>
+        <li>dimpling on the skin of your breasts</li>
+        <li>a rash on or around your nipple</li>
+        <li>a change in the appearance of your nipple, such as becoming sunken into your breast</li>
+      </ul>
+      <p>Breast pain is not usually a symptom of breast cancer.</p>
+      <p>Find out more about the <a href="">symptoms of breast cancer</a>.</p>
+      </section>
+
+      <section>
+        <h2>Causes of breast cancer</h2>
+        <p>The exact causes of breast cancer are not fully understood. However, there are certain factors known to increase the risk of breast cancer.</p>
+        <p>These include:</p>
+        <ul>
+          <li>age – the risk increases as you get older</li>
+          <li>a family history of breast cancer</li>
+          <li>a previous diagnosis of breast cancer</li>
+          <li>a previous non-cancerous (benign) breast lump</li>
+          <li>being tall, overweight or obese</li>
+          <li>drinking alcohol</li>
+        </ul>
+        <p>Find out more about the <a href="">causes of breast cancer</a>.</p>
+      </section>
+
+      <section>
+        <h2>Diagnosing breast cancer</h2>
+        <p>After examining your breasts, a GP may refer you to a specialist breast cancer clinic for further tests. This might include breast screening <a href="">(mammography)</a> or taking a small sample of breast tissue to be examined under a microscope <a href="">(a biopsy)</a>.</p>
+        <p>Find out more about <a href="">how breast cancer is diagnosed</a>.</p>
+      </section>
+
+      <section>
+        <h2>Types of breast cancer</h2>
+        <p>There are several different types of breast cancer, which develop in different parts of the breast.</p>
+        <p>Breast cancer is often divided into either:</p>
+        <ul>
+          <li>non-invasive breast cancer (carcinoma in situ) – found in the ducts of the breast (ductal carcinoma in situ, or DCIS) which has not spread into the breast tissue surrounding the ducts. Non-invasive breast cancer is usually found during a mammogram and rarely shows as a breast lump</li>
+          <li>invasive breast cancer – where the cancer cells have spread through the lining of the ducts into the surrounding breast tissue. This is the most common type of breast cancer.</li>
+        </ul>
+        <p>Other, less common types of breast cancer include:</p>
+        <ul>
+          <li>invasive (and pre-invasive) lobular breast cancer</li>
+          <li>inflammatory breast cancer</li>
+          <li><a href="">Paget's disease of the breast</a></li>
+        </ul>
+        <p>It's possible for breast cancer to spread to other parts of the body, usually through the blood or the axillary lymph nodes. These are small lymphatic glands that filter bacteria and cells from the mammary gland.</p>
+        <p>If this happens, it's known as secondary, or metastatic, breast cancer.</p>
+      </section>
+
+      <section>
+        <h2>Breast cancer screening</h2>
+        <p><a href="/breast-screening/what-happens">Mammographic screening</a>, where <a href="">X-ray</a> images of the breast are taken, is the most commonly available way of finding a change in your breast tissue (lesion) at an early stage.</p>
+        <p>However, you should be aware that a mammogram might fail to detect some breast cancers.</p>
+        <p>It might also increase your chances of having extra tests and interventions, including surgery, even if you're not affected by breast cancer.</p>
+        <p>Women with a higher-than-average risk of developing breast cancer may be offered screening and genetic testing for the condition.</p>
+        <p>As the risk of breast cancer increases with age, all women who are 50 to 70 years old are invited for breast cancer screening every 3 years.</p>
+        <p>Women over the age of 70 are also entitled to screening and can arrange an appointment through their GP or local screening unit.</p>
+        <p>The NHS is in the process of extending the programme as a trial, offering screening to some women aged 47 to 73.</p>
+        <p>Find out more about <a href="/breast-screening/what-is-breast-screening">breast cancer screening</a>.</p>
+        <p>Find a <a href="">breast cancer screening services near you</a></p>
+      </section>
+
+      <section>
+        <h2>Treating breast cancer</h2>
+        <p>If cancer is detected at an early stage, it can be treated before it spreads to other parts of the body.</p>
+        <p>Breast cancer is treated using a combination of:</p>
+        <ul>
+          <li>surgery</li>
+          <li><a href="">chemotherapy</a></li>
+          <li><a href="">radiotherapy</a></li>
+        </ul>
+        <p>Surgery is usually the first type of treatment you'll have, followed by chemotherapy or radiotherapy or, in some cases, hormone or targeted treatments.</p>
+        <p>The type of surgery and the treatment you have afterwards will depend on the type of breast cancer you have. Your doctor should discuss the best treatment plan with you.</p>
+        <p>In a small proportion of women, breast cancer is discovered after it's spread to other parts of the body (metastatic breast cancer).</p>
+        <p>Secondary cancer, also called advanced or metastatic cancer, is not curable, so the aim of treatment is to relieve symptoms.</p>
+        <p>Find out more about <a href="">treating breast cancer</a>.</p>
+      </section>
+
+      <section>
+        <h2>Living with breast cancer</h2>
+        <p>Being diagnosed with breast cancer can affect daily life in many ways, depending on what stage it's at and the treatment you will have.</p>
+        <p>How people cope with the diagnosis and treatment varies from person to person. There are several forms of support available, if you need it.</p>
+        <p>Forms of support may include:</p>
+        <ul>
+          <li>family and friends, who can be a powerful support system</li>
+          <li>communicating with other people in the same situation</li>
+          <li>finding out as much as possible about your condition</li>
+          <li>not trying to do too much or overexerting yourself</li>
+          <li>making time for yourself</li>
+        </ul>
+        <p>Find out more about <a href="">living with breast cancer</a>.</p>
+      </section>
+
+      <section>
+        <h2>Preventing breast cancer</h2>
+        <p>As the causes of breast cancer are not fully understood, at the moment it's not possible to know if it can be prevented.</p>
+        <p>If you have an increased risk of developing the condition, some treatments are available to reduce your risk.</p>
+        <p>Studies have looked at the link between breast cancer and diet. Although there are no definite conclusions, there are benefits for women who:</p>
+        <ul>
+          <li>maintain a <a href="">health weight</a></li>
+          <li><a href="">exercise regularly</a></li>
+          <li>have a low intake of saturated <a href="">fat</a></li>
+          <li>do not drink <a href="">alcohol</a></li>
+        </ul>
+        <p>It's been suggested that regular exercise can reduce your risk of breast cancer by almost as much as a third. Regular exercise and a healthy lifestyle can also improve the outlook for people affected by breast cancer. </p>
+        <p>If you've been through the menopause, it's particularly important that you try to get to, and maintain, a healthy weight.</p>
+        <p>This is because being overweight or obese causes more oestrogen to be produced, which can increase the risk of breast cancer.</p>
+        <p>Find out more about <a href="">preventing breast cancer</a>.</p>
+
+      </section>
+
+
+
+      <div class="nhsuk-review-date">
+        <p class="nhsuk-body-s">
+          Page last reviewed: 27 March 2018<br>
+          Next review due: 27 March 2021
+        </p>
+      </div>
+
+      
+    
+        </div>
+    </div>
+
+   
+        <!-- Custom JavaScript files can be added to this file -->
+        <!-- <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/main.js"></script> -->
+    
+    <!-- Add any custom scripts -->
+    
+        <!-- For adding page specific JavsScript -->
+        
+      
+    
+        
+      
+    
+    </body>
+
+
+    </div>
+  </div>
+{% endblock %}
