@@ -248,3 +248,44 @@
   margin-right: 15px;
   bottom: 0;
 }
+
+.app-side-nav__item--current {
+  border-left: 4px solid #000;
+  margin-left: -12px;
+  padding-left: 8px;
+  color:#000 !important;
+}
+
+
+.app-side-nav__item {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.app-side-nav__link {
+
+}
+
+
+.app-side-nav__list {
+
+  padding-left:12px;
+}
+
+.related-links  {
+  padding-left: 0px;
+  padding-top: 16px;
+}
+
+.related-links li {
+  list-style-type: none;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.55556;
+  font-weight: 300;
+  padding-bottom: 16px;
+}
+
+h4 + .nhsuk-inset-text {
+
+}
